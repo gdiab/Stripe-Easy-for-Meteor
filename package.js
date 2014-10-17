@@ -1,8 +1,8 @@
 Package.describe({
-  summary: "Subsciptions with Stripe made easy for Meteor.",
+  summary: "Subsciptions with Stripe",
   version: "0.0.1",
-  name: "woody:stripe-easy",
-  git: "https://github.com/davidwoody/Stripe-Easy-for-Meteor.git"
+  name: "openfloor-stripe",
+  git: ""
 });
 
 Npm.depends({ "stripe": "2.8.0" });
@@ -23,6 +23,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('woody:stripe');
-  api.addFiles('woody:stripe-tests.js');
+  api.use('stripe');
+  api.addFiles('stripe-tests.js');
 });
